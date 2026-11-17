@@ -279,8 +279,22 @@ document.addEventListener("keydown", e => {
 construirTablero();
 
 // PROVISIONAL: botón "Reiniciar calendario" (borra las celdas abiertas guardadas)
-document.getElementById("reiniciar").addEventListener("click", () => {
-  if (!confirm("¿Cerrar todas las celdas abiertas?")) return;
+// Confirmación en dos pasos dentro de la página (confirm() no funciona en todos los entornos).
+const botonReiniciar = document.getElementById("reiniciar");
+let temporizadorReinicio;
+botonReiniciar.addEventListener("click", () => {
+  if (!botonReiniciar.dataset.confirmar) {
+    botonReiniciar.dataset.confirmar = "1";
+    botonReiniciar.textContent = "¿Seguro? Pulsa otra vez";
+    temporizadorReinicio = setTimeout(() => {
+      delete botonReiniciar.dataset.confirmar;
+      botonReiniciar.textContent = "Reiniciar calendario";
+    }, 3000);
+    return;
+  }
+  clearTimeout(temporizadorReinicio);
+  delete botonReiniciar.dataset.confirmar;
+  botonReiniciar.textContent = "Reiniciar calendario";
   abiertas.clear();
   try { localStorage.removeItem(CLAVE_STORAGE); } catch (e) { /* sin storage */ }
   Object.keys(celdas).forEach(d => actualizarCelda(+d));
