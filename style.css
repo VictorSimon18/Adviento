@@ -94,6 +94,9 @@ h1 {
   font-size: 9cqw;
   font-weight: bold;
   line-height: 1;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, .75);
+  z-index: 1;
   pointer-events: none;
 }
 .celda[data-celda="g"] .num { font-size: 22cqw; }
@@ -106,8 +109,9 @@ h1 {
   max-width: 28px;
   min-width: 14px;
   height: auto;
-  fill: currentColor;
-  opacity: .85;
+  fill: #fff;
+  opacity: .9;
+  z-index: 1;
   display: none;
   pointer-events: none;
 }
@@ -121,10 +125,20 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: none;
+  display: block;
 }
-.celda.abierta .foto { display: block; }
-.celda.abierta.sin-foto .foto { display: none; }
+.celda.sin-foto .foto { display: none; }
+
+/* Velo de color sobre la foto mientras la celda no está abierta */
+.celda::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color);
+  opacity: .5;
+  pointer-events: none;
+}
+.celda.abierta::after { display: none; }
 .celda.abierta.sin-foto {
   background: linear-gradient(135deg, hsl(var(--h) 60% 38%), hsl(calc(var(--h) + 40) 60% 20%));
   color: #fff;
