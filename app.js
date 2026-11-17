@@ -277,3 +277,11 @@ document.addEventListener("keydown", e => {
 });
 
 construirTablero();
+
+// PROVISIONAL: botón "Reiniciar calendario" (borra las celdas abiertas guardadas)
+document.getElementById("reiniciar").addEventListener("click", () => {
+  if (!confirm("¿Cerrar todas las celdas abiertas?")) return;
+  abiertas.clear();
+  try { localStorage.removeItem(CLAVE_STORAGE); } catch (e) { /* sin storage */ }
+  Object.keys(celdas).forEach(d => actualizarCelda(+d));
+});
