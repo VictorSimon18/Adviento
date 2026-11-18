@@ -2,7 +2,7 @@
    Estrategia: primero red (así los cambios nuevos se ven al instante) y, si no
    hay conexión, lo guardado en caché. Si cambias muchos archivos, sube el
    número de VERSION para limpiar la caché antigua. */
-const VERSION = "adviento-v5";
+const VERSION = "adviento-v6";
 const ARCHIVOS = [
   "./", "index.html", "style.css", "app.js", "data.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
