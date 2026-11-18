@@ -13,7 +13,14 @@ const DIAS = {
     texto: "Más vale, de verdad, más vale que tengas la boca ya bien como para disfrutar este regalo. Somos unos gordos, así que no va a ser el único regalo relacionado con la comida. Espero que compartas.",
     lista: []
   },
-  20: { foto: "img/dia-05.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  20: {
+    foto: "img/dia-05.jpg",
+    texto: [
+      "Hoy es domingo y coincide con que hacemos 10 putos meses, así que ¿qué mejor regalo que irnos a echar unas cervezas o unos tintos para celebrarlo?",
+      "Pulsa el botón para descargarte el vale."
+    ],
+    lista: []
+  },
   6: { foto: "img/dia-06.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   7: { foto: "img/dia-07.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   8: { foto: "img/dia-08.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
@@ -30,7 +37,14 @@ const DIAS = {
   19: { foto: "img/dia-19.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   4: { foto: "img/dia-20.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   21: { foto: "img/dia-21.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
-  22: { foto: "img/dia-22.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  22: {
+    foto: "img/dia-22.jpg",
+    texto: [
+      "El regalo de hoy es algo que se me hace difícil regalarte porque me da mucha vergüenza. Espero que nos podamos ver esta tarde y te lo pueda dar, si no otro día.",
+      "Cuando estés en el coche abre el maletero y lo tendrás."
+    ],
+    lista: []
+  },
   23: { foto: "img/dia-23.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   24: { foto: "img/dia-24.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] }
 };

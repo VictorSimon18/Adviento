@@ -227,12 +227,12 @@ function renderContenido(dia) {
   h2.id = "modal-titulo";
   h2.textContent = dia;
   texto.appendChild(h2);
-  if (datos.texto) {
+  [].concat(datos.texto || []).forEach(t => {   // "texto" puede ser un párrafo o una lista de párrafos
     const p = document.createElement("p");
     p.className = "modal-mensaje";
-    p.textContent = datos.texto;
+    p.textContent = t;
     texto.appendChild(p);
-  }
+  });
   if ((datos.lista || []).length) {
     const ul = document.createElement("ul");
     datos.lista.forEach(t => {
