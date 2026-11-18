@@ -10,9 +10,9 @@ const CLAVE_STORAGE = "adviento-2026-abiertas";
 // en style.css). Cambia aquí los números para recolocar los días.
 const DIA_POR_CELDA = {
   a: 7,  b: 15, c: 3,  d: 19, e: 11, f: 22,
-  g: 24, h: 5,  i: 13, j: 1,  k: 17, l: 9,
-  m: 21, n: 2,  o: 14, p: 6,  q: 20, r: 10,
-  s: 4,  t: 23, u: 8,  v: 16, w: 12, x: 18
+  g: 24, h: 20,  i: 13, j: 1,  k: 17, l: 9,
+  m: 21, n: 2,  o: 14, p: 6,  q: 4, r: 10,
+  s: 5,  t: 23, u: 8,  v: 16, w: 12, x: 18
 };
 
 /* ==========================================================================

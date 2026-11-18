@@ -8,12 +8,12 @@ const DIAS = {
   },
   2: { foto: "img/dia-02.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   3: { foto: "img/dia-03.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
-  4: {
+  5: {
     foto: "img/dia-04.jpg",
     texto: "Más vale, de verdad, más vale que tengas la boca ya bien como para disfrutar este regalo. Somos unos gordos, así que no va a ser el único regalo relacionado con la comida. Espero que compartas.",
     lista: []
   },
-  5: { foto: "img/dia-05.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  20: { foto: "img/dia-05.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   6: { foto: "img/dia-06.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   7: { foto: "img/dia-07.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   8: { foto: "img/dia-08.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
@@ -28,7 +28,7 @@ const DIAS = {
   17: { foto: "img/dia-17.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   18: { foto: "img/dia-18.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   19: { foto: "img/dia-19.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
-  20: { foto: "img/dia-20.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  4: { foto: "img/dia-20.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   21: { foto: "img/dia-21.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   22: { foto: "img/dia-22.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   23: { foto: "img/dia-23.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
