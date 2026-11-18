@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff8e7"/><stop offset="1" stop-color="#f3e2b8"/></linearGradient>
+    <linearGradient id="oro" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4d779"/><stop offset="1" stop-color="#b8861f"/></linearGradient>
+    <linearGradient id="cerveza" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd24a"/><stop offset="1" stop-color="#d98a12"/></linearGradient>
+    <polygon id="est" points="0,-9 2.3,-3 8.6,-2.8 3.7,1.2 5.3,7.3 0,3.8 -5.3,7.3 -3.7,1.2 -8.6,-2.8 -2.3,-3"/>
+  </defs>
+  <!-- ticket con muescas laterales -->
+  <path d="M30,0 H970 A30,30 0 0 0 1000,30 V190 A30,30 0 0 0 1000,250 V410 A30,30 0 0 0 970,440 H30 A30,30 0 0 0 0,410 V250 A30,30 0 0 0 0,190 V30 A30,30 0 0 0 30,0Z" fill="url(#fondo)"/>
+  <rect x="24" y="24" width="952" height="392" rx="16" fill="none" stroke="#b3262e" stroke-width="4"/>
+  <rect x="38" y="38" width="924" height="364" rx="10" fill="none" stroke="#1f7a4d" stroke-width="2" stroke-dasharray="10 7"/>
+  <!-- cabecera -->
+  <text x="500" y="92" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" letter-spacing="6" fill="#1f7a4d">CALENDARIO DE ADVIENTO · 2026</text>
+  <g fill="#d4a63a"><use href="#est" x="170" y="84"/><use href="#est" x="830" y="84"/></g>
+  <!-- título -->
+  <text x="500" y="196" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="108" font-weight="bold" letter-spacing="14" fill="#b3262e">VALE</text>
+  <text x="500" y="262" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#3a2a1a">por varias cervezas o tintos</text>
+  <line x1="260" y1="292" x2="740" y2="292" stroke="#d4a63a" stroke-width="3"/>
+  <text x="500" y="338" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="32" font-style="italic" fill="#1f7a4d">(un solo uso, bueno, o varios)</text>
+  <text x="500" y="382" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" letter-spacing="3" fill="#8a6516">20 · 12 · 2026</text>
+  <!-- jarra de cerveza -->
+  <g transform="translate(110,170)">
+    <path d="M10,10 H90 L82,150 Q81,166 66,166 H34 Q19,166 18,150Z" fill="url(#cerveza)" stroke="#8a6516" stroke-width="4"/>
+    <path d="M90,40 H112 Q130,40 130,64 V92 Q130,116 108,116 H86" fill="none" stroke="#8a6516" stroke-width="8" stroke-linecap="round"/>
+    <path d="M6,20 Q6,-6 30,-2 Q38,-16 56,-6 Q76,-14 86,0 Q98,10 94,24 Z" fill="#fff" stroke="#d9d0bd" stroke-width="3"/>
+    <g stroke="#fff" stroke-opacity=".6" stroke-width="3" stroke-linecap="round"><line x1="34" y1="50" x2="34" y2="130"/><line x1="52" y1="56" x2="52" y2="120"/></g>
+  </g>
+  <!-- copa de tinto -->
+  <g transform="translate(790,170)">
+    <path d="M10,0 H90 Q96,70 50,92 Q4,70 10,0Z" fill="#fff" fill-opacity=".5" stroke="#8a6516" stroke-width="4"/>
+    <path d="M13,38 H87 Q86,72 50,90 Q14,72 13,38Z" fill="#8e1b2d"/>
+    <line x1="50" y1="92" x2="50" y2="150" stroke="#8a6516" stroke-width="5" stroke-linecap="round"/>
+    <path d="M22,166 Q50,150 78,166Z" fill="url(#oro)" stroke="#8a6516" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+</svg>

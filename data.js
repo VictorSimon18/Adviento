@@ -15,6 +15,7 @@ const DIAS = {
   },
   20: {
     foto: "img/dia-05.jpg",
+    vale: "img/vale.svg",
     texto: [
       "Hoy es domingo y coincide con que hacemos 10 putos meses, así que ¿qué mejor regalo que irnos a echar unas cervezas o unos tintos para celebrarlo?",
       "Pulsa el botón para descargarte el vale."

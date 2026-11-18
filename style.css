@@ -360,3 +360,18 @@ h1 {
   .celda.disponible, .celda.shake, .celda.giro { animation: none; }
   .aviso { transition: none; }
 }
+
+/* ---------- Vale (día 20) ---------- */
+.vale-caja { display: grid; gap: 12px; margin: 14px 0 4px; }
+.vale-img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 6px 18px rgba(0, 0, 0, .45); }
+.btn-vale {
+  font: inherit;
+  font-weight: 700;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 999px;
+  color: #3a2a1a;
+  background: linear-gradient(#f4d779, #d4a63a);
+  cursor: pointer;
+}
+.btn-vale:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }

@@ -202,6 +202,58 @@ function alPulsar(dia, btn) {
    para que el diálogo siga etiquetado. El resto (abrir/cerrar, Esc, foco)
    está más abajo y no hace falta tocarlo.
    ========================================================================== */
+/* Botón que muestra el vale y permite descargarlo (como PNG; si no se puede, como SVG). */
+function crearBotonVale(ruta) {
+  const caja = document.createElement("div");
+  caja.className = "vale-caja";
+  const ver = document.createElement("button");
+  ver.type = "button";
+  ver.className = "btn-vale";
+  ver.textContent = "Ver mi vale";
+  ver.addEventListener("click", () => {
+    const img = document.createElement("img");
+    img.className = "vale-img";
+    img.src = ruta;
+    img.alt = "Vale por varias cervezas o tintos (un solo uso, bueno, o varios)";
+    const bajar = document.createElement("button");
+    bajar.type = "button";
+    bajar.className = "btn-vale";
+    bajar.textContent = "Descargar vale";
+    bajar.addEventListener("click", () => descargarVale(ruta));
+    ver.replaceWith(img, bajar);
+  });
+  caja.appendChild(ver);
+  return caja;
+}
+
+function guardarArchivo(url, nombre) {
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = nombre;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
+
+function descargarVale(ruta) {
+  const img = new Image();
+  img.onload = () => {
+    try {
+      const c = document.createElement("canvas");
+      c.width = 2000; c.height = 880;
+      c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+      c.toBlob(b => {
+        if (!b) return guardarArchivo(ruta, "vale.svg");
+        const u = URL.createObjectURL(b);
+        guardarArchivo(u, "vale.png");
+        setTimeout(() => URL.revokeObjectURL(u), 4000);
+      }, "image/png");
+    } catch (e) { guardarArchivo(ruta, "vale.svg"); }
+  };
+  img.onerror = () => guardarArchivo(ruta, "vale.svg");
+  img.src = ruta;
+}
+
 function renderContenido(dia) {
   const cont = document.getElementById("modal-contenido");
   const datos = DIAS[dia] || { foto: "", lista: [] };
@@ -233,6 +285,7 @@ function renderContenido(dia) {
     p.textContent = t;
     texto.appendChild(p);
   });
+  if (datos.vale) texto.appendChild(crearBotonVale(datos.vale));
   if ((datos.lista || []).length) {
     const ul = document.createElement("ul");
     datos.lista.forEach(t => {
