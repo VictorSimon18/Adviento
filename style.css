@@ -278,6 +278,8 @@ h1 {
 }
 .modal-texto { padding: 16px 20px 22px; }
 .modal-texto h2 { margin: 0 0 10px; color: var(--oro); }
+.modal-regalo { margin: 0 0 10px; font-size: 1.15rem; font-weight: bold; }
+.modal-mensaje { margin: 0 0 12px; line-height: 1.6; }
 .modal-texto ul { margin: 0; padding-left: 22px; line-height: 1.6; }
 
 /* ---------- Nieve ligera (solo CSS) ---------- */
