@@ -196,7 +196,7 @@ function alPulsar(dia, btn) {
    CONTENIDO AL ABRIR
    ==========================================================================
    renderContenido(dia) es el ÚNICO sitio que decide qué se ve al abrir una
-   celda. Ahora mismo: foto + título (solo el número) + regalo + texto + lista (todo opcional salvo la foto) de data.js dentro de un
+   celda. Ahora mismo: foto + título (solo el número) + texto + lista (todo opcional salvo la foto) de data.js dentro de un
    modal. Para cambiarlo, edita solo esta función: rellena `cont` (el interior
    del modal) con lo que quieras. El título debe conservar id="modal-titulo"
    para que el diálogo siga etiquetado. El resto (abrir/cerrar, Esc, foco)
@@ -227,12 +227,6 @@ function renderContenido(dia) {
   h2.id = "modal-titulo";
   h2.textContent = dia;
   texto.appendChild(h2);
-  if (datos.regalo) {
-    const h3 = document.createElement("p");
-    h3.className = "modal-regalo";
-    h3.textContent = datos.regalo;
-    texto.appendChild(h3);
-  }
   if (datos.texto) {
     const p = document.createElement("p");
     p.className = "modal-mensaje";
