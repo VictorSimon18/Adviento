@@ -23,7 +23,7 @@ body {
 main {
   position: relative;
   z-index: 1;
-  padding: 20px 16px 40px;
+  padding: max(20px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(40px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
 }
 
 h1 {
@@ -190,8 +190,8 @@ h1 {
 /* ---------- Botón provisional de reinicio ---------- */
 .reiniciar {
   position: fixed;
-  right: 12px;
-  bottom: 12px;
+  right: max(12px, env(safe-area-inset-right));
+  bottom: max(12px, env(safe-area-inset-bottom));
   z-index: 5;
   padding: 8px 12px;
   border: 1px solid rgba(255, 255, 255, .35);
