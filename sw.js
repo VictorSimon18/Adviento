@@ -2,10 +2,11 @@
    Estrategia: primero red (así los cambios nuevos se ven al instante) y, si no
    hay conexión, lo guardado en caché. Si cambias muchos archivos, sube el
    número de VERSION para limpiar la caché antigua. */
-const VERSION = "adviento-v1";
+const VERSION = "adviento-v2";
 const ARCHIVOS = [
   "./", "index.html", "style.css", "app.js", "data.js", "manifest.webmanifest",
-  "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"
+  "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
+  "deco/guirnalda.svg", "deco/estrellas.svg", "deco/lateral.svg", "deco/bosque.svg"
 ];
 for (let i = 1; i <= 24; i++) ARCHIVOS.push("img/dia-" + String(i).padStart(2, "0") + ".jpg");
 

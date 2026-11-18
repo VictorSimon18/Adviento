@@ -13,7 +13,9 @@
 html, body { margin: 0; }
 
 body {
+  position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
   background: radial-gradient(ellipse at top, var(--fondo-1), var(--fondo-2) 75%) fixed;
   background-color: var(--fondo-2);
   color: var(--texto);
@@ -23,7 +25,7 @@ body {
 main {
   position: relative;
   z-index: 1;
-  padding: max(20px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(40px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  padding: calc(env(safe-area-inset-top, 0px) + 84px) max(16px, env(safe-area-inset-right)) max(40px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
 }
 
 h1 {
@@ -281,6 +283,48 @@ h1 {
 .modal-mensaje { margin: 0 0 12px; line-height: 1.6; }
 .modal-texto ul { margin: 0; padding-left: 22px; line-height: 1.6; }
 
+/* ---------- Decoración navideña ---------- */
+.estrellas, .bosque, .guirnalda, .lateral { pointer-events: none; }
+.estrellas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: url(deco/estrellas.svg) 0 0 / 320px 320px;
+}
+.bosque {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  height: 110px;
+  background: url(deco/bosque.svg) repeat-x center bottom / 400px 110px;
+  opacity: .4;
+}
+.guirnalda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 92px;
+  background: url(deco/guirnalda.svg) repeat-x center top / 480px 92px;
+}
+.lateral {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 100px;
+  background: url(deco/lateral.svg) repeat-y center top / 100px 420px;
+}
+@media (min-width: 900px) {
+  .lateral { display: block; }
+  .lateral-izq { right: calc(50% + 330px); }
+  .lateral-der { left: calc(50% + 330px); transform: scaleX(-1); }
+}
+
 /* ---------- Nieve ligera (solo CSS) ---------- */
 .nieve {
   position: fixed;
@@ -297,9 +341,22 @@ h1 {
   animation: nieve 20s linear infinite;
 }
 @keyframes nieve { to { background-position: 0 250px; } }
+/* segunda capa: copos más grandes y lentos, con deriva en diagonal */
+.nieve::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(3px 3px at 60px 80px, rgba(255, 255, 255, .85), transparent),
+    radial-gradient(4px 4px at 190px 40px, rgba(255, 255, 255, .8), transparent),
+    radial-gradient(3px 3px at 120px 230px, rgba(255, 255, 255, .8), transparent);
+  background-size: 340px 340px;
+  animation: nieve2 34s linear infinite;
+}
+@keyframes nieve2 { to { background-position: -70px 340px; } }
 
 @media (prefers-reduced-motion: reduce) {
-  .nieve { animation: none; }
+  .nieve, .nieve::after { animation: none; }
   .celda.disponible, .celda.shake, .celda.giro { animation: none; }
   .aviso { transition: none; }
 }

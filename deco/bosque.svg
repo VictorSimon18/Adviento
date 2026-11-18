@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="110" viewBox="0 0 400 110">
+  <g fill="#0d3326">
+    <!-- pino 1 -->
+    <polygon points="35,26 17,60 53,60"/><polygon points="35,46 14,76 56,76"/><polygon points="35,62 11,92 59,92"/>
+    <!-- pino 2 -->
+    <polygon points="110,41 94,68 126,68"/><polygon points="110,58 91,84 129,84"/>
+    <!-- pino 3 (grande) -->
+    <polygon points="190,12 168,52 212,52"/><polygon points="190,36 164,72 216,72"/><polygon points="190,58 160,94 220,94"/>
+    <!-- pino 4 -->
+    <polygon points="275,36 258,64 292,64"/><polygon points="275,54 254,82 296,82"/>
+    <!-- pino 5 -->
+    <polygon points="350,20 331,56 369,56"/><polygon points="350,42 327,76 373,76"/><polygon points="350,62 323,94 377,94"/>
+  </g>
+  <g fill="#eaf3f0" opacity=".85">
+    <polygon points="35,26 28,40 42,40"/><polygon points="110,41 104,52 116,52"/><polygon points="190,12 181,28 199,28"/>
+    <polygon points="275,36 268,48 282,48"/><polygon points="350,20 342,36 358,36"/>
+  </g>
+  <path d="M0,100 Q50,88 100,98 T200,96 T300,99 T400,100 L400,110 L0,110Z" fill="#eaf3f0" opacity=".9"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="92" viewBox="0 0 480 92">
+  <defs>
+    <radialGradient id="r" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ff9a9a"/><stop offset=".5" stop-color="#d12f3a"/><stop offset="1" stop-color="#7a0f1a"/></radialGradient>
+    <radialGradient id="o" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff2b0"/><stop offset=".5" stop-color="#e0b246"/><stop offset="1" stop-color="#8a6516"/></radialGradient>
+    <radialGradient id="b" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#a9d2ff"/><stop offset=".5" stop-color="#3b78c4"/><stop offset="1" stop-color="#17386b"/></radialGradient>
+    <symbol id="s" viewBox="-8 -8 16 16" overflow="visible"><polygon fill="#ffd45a" points="0,-7 1.7,-2.35 6.66,-2.16 2.76,0.9 4.11,5.66 0,2.9 -4.11,5.66 -2.76,0.9 -6.66,-2.16 -1.7,-2.35"/></symbol>
+    <style>
+      .tw { animation: tw 2.6s ease-in-out infinite; }
+      .tw2 { animation-delay: 1.3s; }
+      @keyframes tw { 50% { opacity: .35; } }
+      @media (prefers-reduced-motion: reduce) { .tw { animation: none; } }
+    </style>
+  </defs>
+
+  <!-- espumillón: base + destellos -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M0,4 Q80,56 160,4"   stroke="#c8323c" stroke-width="8"/>
+    <path d="M160,4 Q240,56 320,4" stroke="#2f9e63" stroke-width="8"/>
+    <path d="M320,4 Q400,56 480,4" stroke="#e0b246" stroke-width="8"/>
+    <g stroke="#fff" stroke-opacity=".3" stroke-width="8" stroke-dasharray="1.5 3.5">
+      <path d="M0,4 Q80,56 160,4"/><path d="M160,4 Q240,56 320,4"/><path d="M320,4 Q400,56 480,4"/>
+    </g>
+  </g>
+
+  <!-- bolas colgando -->
+  <g stroke="#d9c27a" stroke-width="1">
+    <line x1="80" y1="30" x2="80" y2="48"/><line x1="240" y1="30" x2="240" y2="52"/><line x1="400" y1="30" x2="400" y2="46"/>
+  </g>
+  <g>
+    <rect x="76" y="44" width="8" height="6" rx="1.5" fill="#e0b246"/>
+    <circle cx="80" cy="63" r="14" fill="url(#r)"/><ellipse cx="74" cy="57" rx="4" ry="2.4" fill="#fff" opacity=".65" transform="rotate(-35 74 57)"/>
+    <rect x="236" y="48" width="8" height="6" rx="1.5" fill="#c8c8c8"/>
+    <circle cx="240" cy="66" r="13" fill="url(#o)"/><ellipse cx="234" cy="60" rx="3.6" ry="2.2" fill="#fff" opacity=".65" transform="rotate(-35 234 60)"/>
+    <rect x="396" y="42" width="8" height="6" rx="1.5" fill="#e0b246"/>
+    <circle cx="400" cy="60" r="14" fill="url(#b)"/><ellipse cx="394" cy="54" rx="4" ry="2.4" fill="#fff" opacity=".65" transform="rotate(-35 394 54)"/>
+  </g>
+
+  <!-- estrellitas colgando -->
+  <g stroke="#d9c27a" stroke-width=".8">
+    <line x1="40" y1="24" x2="40" y2="34"/><line x1="120" y1="24" x2="120" y2="34"/>
+    <line x1="200" y1="24" x2="200" y2="34"/><line x1="280" y1="24" x2="280" y2="34"/>
+    <line x1="360" y1="24" x2="360" y2="34"/><line x1="440" y1="24" x2="440" y2="34"/>
+  </g>
+  <use href="#s" class="tw" x="32" y="34" width="16" height="16"/>
+  <use href="#s" class="tw tw2" x="112" y="34" width="16" height="16"/>
+  <use href="#s" class="tw tw2" x="192" y="34" width="16" height="16"/>
+  <use href="#s" class="tw" x="272" y="34" width="16" height="16"/>
+  <use href="#s" class="tw" x="352" y="34" width="16" height="16"/>
+  <use href="#s" class="tw tw2" x="432" y="34" width="16" height="16"/>
+</svg>
