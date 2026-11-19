@@ -23,7 +23,15 @@ const DIAS = {
     lista: []
   },
   6: { foto: "img/dia-06.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
-  7: { foto: "img/dia-07.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  7: {
+    foto: "img/dia-07.jpg",
+    texto: [
+      "Este regalo creo que me va a gustar más a mí que a ti.",
+      "Sé que es una frikada, pero hacer 24 regalos sin gastarme 2000 euros no es fácil, y para algo me tiene que servir saber programar.",
+      "Así que ahora me dejas el móvil y 5 minutos y te enseño tu séptimo regalo."
+    ],
+    lista: []
+  },
   8: { foto: "img/dia-08.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   9: { foto: "img/dia-09.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   10: { foto: "img/dia-10.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
@@ -36,7 +44,14 @@ const DIAS = {
   17: { foto: "img/dia-17.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   18: { foto: "img/dia-18.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   19: { foto: "img/dia-19.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
-  4: { foto: "img/dia-20.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  4: {
+    foto: "img/dia-20.jpg",
+    texto: [
+      "Cuando empecé a salir contigo dejé la ludopatía, pero este regalo tiene que ver con ella (en mayor o menor medida).",
+      "Sé que igual no hace mucha gracia acabar la colección así, pero tenía que hacerlo."
+    ],
+    lista: []
+  },
   21: { foto: "img/dia-21.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   22: {
     foto: "img/dia-22.jpg",
