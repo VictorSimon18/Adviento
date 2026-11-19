@@ -6,7 +6,15 @@ const DIAS = {
     texto: "Empezamos este calendario con un regalo que veo necesario para nuestro coche. Esto lo estoy preparando con tiempo, así que espero que tengamos ya la manta, porque este regalo combina muy bien con ella. A ver si te gusta, por lo menos no se te romperá el cuello cuando te duermas.",
     lista: []
   },
-  2: { foto: "img/dia-02.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  2: {
+    foto: "img/dia-02.jpg",
+    vale: { ruta: "img/vale-cena.svg", archivo: "vale-cena.png", alt: "Vale por una cena o comida guarra, igual más adelante hay alguna cena mejor... se puede canjear cuando la jefa quiera" },
+    texto: [
+      "Dentro de este calendario va a haber cosas que te dé en mano y otras virtuales, porque si me tienes que ver 24 días seguidos acabarías hasta la polla de mí.",
+      "Pulsa el botón para ver el regalo de hoy."
+    ],
+    lista: []
+  },
   3: { foto: "img/dia-03.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   5: {
     foto: "img/dia-04.jpg",
@@ -15,7 +23,7 @@ const DIAS = {
   },
   20: {
     foto: "img/dia-05.jpg",
-    vale: "img/vale.svg",
+    vale: { ruta: "img/vale.svg", archivo: "vale-cervezas.png", alt: "Vale por varias cervezas o tintos (un solo uso, bueno, o varios)" },
     texto: [
       "Hoy es domingo y coincide con que hacemos 10 putos meses, así que ¿qué mejor regalo que irnos a echar unas cervezas o unos tintos para celebrarlo?",
       "Pulsa el botón para descargarte el vale."

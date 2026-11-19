@@ -206,7 +206,7 @@ function alPulsar(dia, btn) {
    está más abajo y no hace falta tocarlo.
    ========================================================================== */
 /* Botón que muestra el vale y permite descargarlo (como PNG; si no se puede, como SVG). */
-function crearBotonVale(ruta) {
+function crearBotonVale(vale) {
   const caja = document.createElement("div");
   caja.className = "vale-caja";
   const ver = document.createElement("button");
@@ -216,13 +216,13 @@ function crearBotonVale(ruta) {
   ver.addEventListener("click", () => {
     const img = document.createElement("img");
     img.className = "vale-img";
-    img.src = ruta;
-    img.alt = "Vale por varias cervezas o tintos (un solo uso, bueno, o varios)";
+    img.src = vale.ruta;
+    img.alt = vale.alt;
     const bajar = document.createElement("button");
     bajar.type = "button";
     bajar.className = "btn-vale";
     bajar.textContent = "Descargar vale";
-    bajar.addEventListener("click", () => descargarVale(ruta));
+    bajar.addEventListener("click", () => descargarVale(vale.ruta, vale.archivo));
     ver.replaceWith(img, bajar);
   });
   caja.appendChild(ver);
@@ -238,7 +238,7 @@ function guardarArchivo(url, nombre) {
   a.remove();
 }
 
-function descargarVale(ruta) {
+function descargarVale(ruta, archivo) {
   const img = new Image();
   img.onload = () => {
     try {
@@ -248,7 +248,7 @@ function descargarVale(ruta) {
       c.toBlob(b => {
         if (!b) return guardarArchivo(ruta, "vale.svg");
         const u = URL.createObjectURL(b);
-        guardarArchivo(u, "vale.png");
+        guardarArchivo(u, archivo);
         setTimeout(() => URL.revokeObjectURL(u), 4000);
       }, "image/png");
     } catch (e) { guardarArchivo(ruta, "vale.svg"); }
