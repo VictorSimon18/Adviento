@@ -30,7 +30,11 @@ const DIAS = {
     ],
     lista: []
   },
-  6: { foto: "img/dia-06.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  6: {
+    foto: "img/dia-06.jpg",
+    texto: "Hacer 24 regalos no es fácil, y más a ti que nunca quieres nada, así que he tenido que pensar muchas chorradas y creo que esta te va a molar.",
+    lista: []
+  },
   7: {
     foto: "img/dia-07.jpg",
     texto: [
