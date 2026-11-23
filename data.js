@@ -1,7 +1,7 @@
 // Contenido editable de cada día. "foto" = ruta de la imagen; "lista" = elementos (puede ir vacía).
 // Opcional: "texto" = mensaje.
 const DIAS = {
-  1: {
+  3: {
     foto: "img/dia-01.jpg",
     texto: "Empezamos este calendario con un regalo que veo necesario para nuestro coche. Esto lo estoy preparando con tiempo, así que espero que tengamos ya la manta, porque este regalo combina muy bien con ella. A ver si te gusta, por lo menos no se te romperá el cuello cuando te duermas.",
     lista: []
@@ -15,7 +15,7 @@ const DIAS = {
     ],
     lista: []
   },
-  3: { foto: "img/dia-03.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  7: { foto: "img/dia-03.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   5: {
     foto: "img/dia-04.jpg",
     texto: "Más vale, de verdad, más vale que tengas la boca ya bien como para disfrutar este regalo. Somos unos gordos, así que no va a ser el único regalo relacionado con la comida. Espero que compartas.",
@@ -35,7 +35,7 @@ const DIAS = {
     texto: "Hacer 24 regalos no es fácil, y más a ti que nunca quieres nada, así que he tenido que pensar muchas chorradas y creo que esta te va a molar.",
     lista: []
   },
-  7: {
+  1: {
     foto: "img/dia-07.jpg",
     texto: [
       "Este regalo creo que me va a gustar más a mí que a ti.",
