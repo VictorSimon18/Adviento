@@ -44,10 +44,23 @@ const DIAS = {
     ],
     lista: []
   },
-  8: { foto: "img/dia-08.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  8: {
+    foto: "img/dia-08.jpg",
+    texto: "Seguimos con los regalos de comida. Hace poco me hiciste una tú y la quiero intentar mejorar, a ver si adivinas el sabor.",
+    lista: []
+  },
   9: { foto: "img/dia-09.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
-  10: { foto: "img/dia-10.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
-  11: { foto: "img/dia-11.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  10: {
+    foto: "img/dia-10.jpg",
+    vale: { ruta: "img/vale-peli.svg", archivo: "vale-peli.png", alt: "Vale por una peli, para cuando salga una peli guapa en el cine" },
+    texto: "Hoy no creo que nos veamos, así que el regalo es más chill. Guárdatelo para cuando salga una peli guapa en el cine.",
+    lista: []
+  },
+  11: {
+    foto: "img/dia-11.jpg",
+    texto: "Creo que este te va a molar. De algo sirve entrar a la tienda Lego siempre que pasamos por delante.",
+    lista: []
+  },
   12: { foto: "img/dia-12.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   13: { foto: "img/dia-13.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   14: { foto: "img/dia-14.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
