@@ -65,10 +65,22 @@ const DIAS = {
     texto: "Creo que este te va a molar. De algo sirve entrar a la tienda Lego siempre que pasamos por delante.",
     lista: []
   },
-  12: { foto: "img/dia-12.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  12: {
+    foto: "img/dia-12.jpg",
+    texto: "Según tú yo no quería jugar a esto, pero me parece guay, la pena es que soy más listo que tú y te aburrirías.",
+    lista: []
+  },
   13: { foto: "img/dia-13.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
-  14: { foto: "img/dia-14.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
-  15: { foto: "img/dia-15.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  14: {
+    foto: "img/dia-14.jpg",
+    texto: "En algún momento te tendrás que acabar la colección, y como con el bono cultural no te lo compraste, te lo regalo yo.",
+    lista: []
+  },
+  15: {
+    foto: "img/dia-15.jpg",
+    texto: "Como el último que te compré fue un poco pocho, este es mejor. Espero que te entre bien en el dedo.",
+    lista: []
+  },
   16: { foto: "img/dia-16.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   17: { foto: "img/dia-17.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   18: { foto: "img/dia-18.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
