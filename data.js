@@ -15,7 +15,11 @@ const DIAS = {
     ],
     lista: []
   },
-  7: { foto: "img/dia-03.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  7: {
+    foto: "img/dia-03.jpg",
+    texto: "Este regalo no sabía bien cómo hacerlo. Primero compré una cosa, luego vi otra y cambié, pero manteniendo la esencia. Creo que puede molar y lo podemos hacer juntos si me dejas.",
+    lista: []
+  },
   5: {
     foto: "img/dia-04.jpg",
     texto: "Más vale, de verdad, más vale que tengas la boca ya bien como para disfrutar este regalo. Somos unos gordos, así que no va a ser el único regalo relacionado con la comida. Espero que compartas.",
