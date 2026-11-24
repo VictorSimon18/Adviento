@@ -264,7 +264,7 @@ function renderContenido(dia) {
 
   // Foto, con degradado de color si no carga
   const img = document.createElement("img");
-  img.className = "modal-foto";
+  img.className = "modal-foto" + (datos.cubrir ? " modal-foto--cubrir" : "");   // cubrir: llena todo el marco recortando
   img.alt = "Foto del día " + dia;
   img.src = datos.foto;
   img.onerror = () => {

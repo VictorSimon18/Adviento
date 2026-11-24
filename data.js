@@ -3,11 +3,12 @@
 const DIAS = {
   3: {
     foto: "img/dia-01.jpg",
-    texto: "Empezamos este calendario con un regalo que veo necesario para nuestro coche. Esto lo estoy preparando con tiempo, así que espero que tengamos ya la manta, porque este regalo combina muy bien con ella. A ver si te gusta, por lo menos no se te romperá el cuello cuando te duermas.",
+    texto: "Este es un regalo que veo necesario para nuestro coche. Esto lo estoy preparando con tiempo, así que espero que tengamos ya la manta, porque este regalo combina muy bien con ella. A ver si te gusta, por lo menos no se te romperá el cuello cuando te duermas.",
     lista: []
   },
   2: {
     foto: "img/dia-02.jpg",
+    cubrir: true,
     vale: { ruta: "img/vale-cena.svg", archivo: "vale-cena.png", alt: "Vale por una cena o comida guarra, igual más adelante hay alguna cena mejor... se puede canjear cuando la jefa quiera" },
     texto: [
       "Dentro de este calendario va a haber cosas que te dé en mano y otras virtuales, porque si me tienes que ver 24 días seguidos acabarías hasta la polla de mí.",
@@ -42,7 +43,7 @@ const DIAS = {
   1: {
     foto: "img/dia-07.jpg",
     texto: [
-      "Este regalo creo que me va a gustar más a mí que a ti.",
+      "Empezamos el calendario con… este regalo creo que me va a gustar más a mí que a ti.",
       "Sé que es una frikada, pero hacer 24 regalos sin gastarme 2000 euros no es fácil, y para algo me tiene que servir saber programar.",
       "Así que ahora me dejas el móvil y 5 minutos y te enseño tu séptimo regalo."
     ],
@@ -91,7 +92,7 @@ const DIAS = {
   19: {
     foto: "img/dia-19.jpg",
     texto: [
-      "Ya te regalé una de estas para tu cumple. Esta vez viene sin mensaje ñoño por detrás para que no te dé cache. Ponerla en tu habitación.",
+      "Ya te regalé una de estas para tu cumple. Esta vez viene sin mensaje ñoño por detrás para que no te dé lache, ponerla en tu habitación.",
       "Es una de mis fotos favoritas contigo."
     ],
     lista: []
