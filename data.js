@@ -84,7 +84,7 @@ const DIAS = {
     texto: "Como el último que te compré fue un poco pocho, este es mejor. Espero que te entre bien en el dedo.",
     lista: []
   },
-  16: { foto: "img/dia-16.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  16: { foto: "img/dia-16.jpg", cubrir: "center 30%", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   17: { foto: "img/dia-17.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   18: {
     foto: "img/dia-18.jpg",
