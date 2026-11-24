@@ -29,7 +29,7 @@ const DIAS = {
     foto: "img/dia-05.jpg",
     vale: { ruta: "img/vale.svg", archivo: "vale-cervezas.png", alt: "Vale por varias cervezas o tintos (un solo uso, bueno, o varios)" },
     texto: [
-      "Hoy es domingo y coincide con que hacemos 10 putos meses, así que ¿qué mejor regalo que irnos a echar unas cervezas o unos tintos para celebrarlo?",
+      "Hoy es domingo y coincide con que hacemos 9 putos meses, así que ¿qué mejor regalo que irnos a echar unas cervezas o unos tintos para celebrarlo?",
       "Pulsa el botón para descargarte el vale."
     ],
     lista: []
@@ -83,8 +83,19 @@ const DIAS = {
   },
   16: { foto: "img/dia-16.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   17: { foto: "img/dia-17.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
-  18: { foto: "img/dia-18.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
-  19: { foto: "img/dia-19.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  18: {
+    foto: "img/dia-18.jpg",
+    texto: "Este regalo lo vamos a guardar hasta que tengamos nuestra casa, va a ser nuestro primer adorno navideño.",
+    lista: []
+  },
+  19: {
+    foto: "img/dia-19.jpg",
+    texto: [
+      "Ya te regalé una de estas para tu cumple. Esta vez viene sin mensaje ñoño por detrás para que no te dé cache. Ponerla en tu habitación.",
+      "Es una de mis fotos favoritas contigo."
+    ],
+    lista: []
+  },
   4: {
     foto: "img/dia-20.jpg",
     texto: [
@@ -93,7 +104,11 @@ const DIAS = {
     ],
     lista: []
   },
-  21: { foto: "img/dia-21.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  21: {
+    foto: "img/dia-21.jpg",
+    texto: "Como sigo sin ser un experto en maquillaje, aunque cada vez sé más, prefiero regalarte esto, ya iremos un día a gastarla.",
+    lista: []
+  },
   22: {
     foto: "img/dia-22.jpg",
     texto: [
@@ -102,6 +117,21 @@ const DIAS = {
     ],
     lista: []
   },
-  23: { foto: "img/dia-23.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
-  24: { foto: "img/dia-24.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] }
+  23: {
+    foto: "img/dia-23.jpg",
+    vale: { ruta: "img/vale-sushi.svg", archivo: "vale-sushi.png", alt: "Vale por sushi, a ver si consigues que me guste y no me ponga malo otra vez" },
+    texto: [
+      "Igual este es uno de los regalos que más ilusión te hace, pero yo tengo poca gana, pero por ti lo que sea.",
+      "Úsalo y un día vamos al Carrefour, al Costco o a algún buffet y a ver si consigues que me guste y no me ponga malo otra vez."
+    ],
+    lista: []
+  },
+  24: {
+    foto: "img/dia-24.jpg",
+    texto: [
+      "Último regalo del año, quería que fuera algo especial que te recordase a mí, espero poder verte hoy y dártelo.",
+      "Te amo."
+    ],
+    lista: []
+  }
 };
