@@ -94,7 +94,7 @@ const DIAS = {
   19: {
     foto: "img/dia-19.jpg",
     texto: [
-      "Ya te regalé una de estas para tu cumple. Esta vez viene sin mensaje ñoño por detrás para que no te dé lache, ponerla en tu habitación.",
+      "Ya te regalé una de estas para tu cumple. Esta vez viene sin mensaje ñoño por detrás para que no te dé lache ponerla en tu habitación.",
       "Es una de mis fotos favoritas contigo."
     ],
     lista: []
