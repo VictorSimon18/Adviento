@@ -266,6 +266,7 @@ function renderContenido(dia) {
   const img = document.createElement("img");
   img.className = "modal-foto" + (datos.cubrir ? " modal-foto--cubrir" : "");   // cubrir: llena todo el marco recortando
   img.alt = "Foto del día " + dia;
+  if (typeof datos.cubrir === "string") img.style.objectPosition = datos.cubrir;   // p. ej. "center 80%"
   img.src = datos.foto;
   img.onerror = () => {
     const vacio = document.createElement("div");

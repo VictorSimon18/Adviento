@@ -18,6 +18,7 @@ const DIAS = {
   },
   7: {
     foto: "img/dia-03.jpg",
+    cubrir: "center 70%",
     texto: "Este regalo no sabía bien cómo hacerlo. Primero compré una cosa, luego vi otra y cambié, pero manteniendo la esencia. Creo que puede molar y lo podemos hacer juntos si me dejas.",
     lista: []
   },
@@ -57,6 +58,7 @@ const DIAS = {
   9: { foto: "img/dia-09.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
   10: {
     foto: "img/dia-10.jpg",
+    cubrir: "center 10%",
     vale: { ruta: "img/vale-peli.svg", archivo: "vale-peli.png", alt: "Vale por una peli, para cuando salga una peli guapa en el cine" },
     texto: "Hoy no creo que nos veamos, así que el regalo es más chill. Guárdatelo para cuando salga una peli guapa en el cine.",
     lista: []
@@ -107,11 +109,13 @@ const DIAS = {
   },
   21: {
     foto: "img/dia-21.jpg",
+    cubrir: "center 15%",
     texto: "Como sigo sin ser un experto en maquillaje, aunque cada vez sé más, prefiero regalarte esto, ya iremos un día a gastarla.",
     lista: []
   },
   22: {
     foto: "img/dia-22.jpg",
+    cubrir: "center 10%",
     texto: [
       "El regalo de hoy es algo que se me hace difícil regalarte porque me da mucha vergüenza. Espero que nos podamos ver esta tarde y te lo pueda dar, si no otro día.",
       "Cuando estés en el coche abre el maletero y lo tendrás."
