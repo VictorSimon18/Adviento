@@ -138,8 +138,8 @@ function construirTablero() {
 
 function actualizarCelda(dia) {
   const btn = celdas[dia];
-  const abierta = abiertas.has(dia);
   const libre = estaDesbloqueado(dia);
+  const abierta = libre && abiertas.has(dia);   // una casilla aún bloqueada nunca se ve abierta (p. ej. abierta durante las pruebas)
   btn.classList.toggle("abierta", abierta);
   btn.classList.toggle("bloqueada", !libre && !abierta);
   btn.classList.toggle("disponible", libre && !abierta);
