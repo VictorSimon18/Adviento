@@ -55,7 +55,15 @@ const DIAS = {
     texto: "Seguimos con los regalos de comida. Hace poco me hiciste una tú y la quiero intentar mejorar, a ver si adivinas el sabor.",
     lista: []
   },
-  9: { foto: "img/dia-09.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  9: {
+    foto: "img/dia-09.jpg",
+    vale: { ruta: "img/vale-casa.svg", archivo: "vale-casa.png", alt: "Vale por una casa, a canjear dentro de unos años, ojalá que no" },
+    texto: [
+      "Este regalo vas a tener que esperarte a usarlo unos cuantos años (ojalá que no).",
+      "Úsalo cuando veas…"
+    ],
+    lista: []
+  },
   10: {
     foto: "img/dia-10.jpg",
     cubrir: "center 10%",
