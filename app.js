@@ -6,7 +6,7 @@
 const ANIO = 2026;
 /* SOLO PARA PRUEBAS: true = todas las casillas se pueden abrir sin esperar a su día.
    En la versión final, ponerlo en false (el desbloqueo día a dia sigue implementado). */
-const DESBLOQUEAR_TODO = true;
+const DESBLOQUEAR_TODO = false;
 const CLAVE_STORAGE = "adviento-2026-abiertas";
 
 // Qué día va en cada celda del grid (las letras son las de grid-template-areas
