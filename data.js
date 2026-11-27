@@ -81,7 +81,14 @@ const DIAS = {
     texto: "Según tú yo no quería jugar a esto, pero me parece guay, la pena es que soy más listo que tú y te aburrirías.",
     lista: []
   },
-  13: { foto: "img/dia-13.jpg", lista: ["Elemento 1", "Elemento 2", "Elemento 3"] },
+  13: {
+    foto: "img/dia-13.jpg",
+    texto: [
+      "Esto es un juego de mesa en el cual hay que pensar un poco, lo vi hace tiempo en TikTok y me moló, creo que a ti también te va a molar, una pena que no me vayas a ganar nunca.",
+      "A ver si hace buen día y nos vemos y lo podemos probar hoy."
+    ],
+    lista: []
+  },
   14: {
     foto: "img/dia-14.jpg",
     texto: "En algún momento te tendrás que acabar la colección, y como con el bono cultural no te lo compraste, te lo regalo yo.",
